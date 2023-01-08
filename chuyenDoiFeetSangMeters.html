@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Feet <input type="number" id="first" oninput="footToMeter()"/> change Meter is : <span id="demo"></span><br><br>
+Meter<input type="number" id="two" oninput="meterToFoot()"/> change Feet is : <span id="demo1"></span>
+</body>
+<script>
+
+ // function footToMeter(a) {
+ //     let meter = 0.305 * a;
+ //     return meter;
+ // }
+ // function asfgsa(){
+ //     let a = document.getElementById("first").value;
+ //     let meter = footToMeter(a)
+ //     document.getElementById("demo").innerHTML = meter;
+ // }
+ //
+ //
+ // function meterToFoot(b) {
+ //     let foot = 3.279 * b;
+ //     return foot;
+ // }
+ // let b = document.getElementById("two").value;
+ // let foot = meterToFoot(b)
+ // document.getElementById("demo1").innerHTML = foot;
+
+
+
+    function footToMeter() {
+        let a = document.getElementById("first").value;
+        let meter = 0.305 * a;
+        document.getElementById("demo").innerHTML = meter;
+    }
+    footToMeter()
+
+    function meterToFoot() {
+        let b = document.getElementById("two").value;
+        let foot = 3.279 * b;
+        document.getElementById("demo1").innerHTML = foot;
+    }
+    meterToFoot()
+</script>
+</html>
